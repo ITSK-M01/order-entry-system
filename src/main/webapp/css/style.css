@@ -1,0 +1,93 @@
+body {
+    font-family: "Meiryo", "Yu Gothic", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2b3a55;
+    color: #fff;
+    padding: 12px 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #3f5372;
+    padding: 8px 24px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 24px;
+}
+
+h2 {
+    color: #2b3a55;
+    border-bottom: 2px solid #2b3a55;
+    padding-bottom: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 12px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #eef1f6;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.toolbar {
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #2b3a55;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.btn:hover {
+    background-color: #3f5372;
+}
+
+.error {
+    color: #b00020;
+    font-weight: bold;
+}
+
+select, input[type="submit"] {
+    padding: 4px 8px;
+    font-size: 14px;
+}
