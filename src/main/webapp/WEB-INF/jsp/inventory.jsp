@@ -36,11 +36,25 @@
         </thead>
         <tbody>
         <c:forEach var="inventory" items="${inventoryList}">
-            <tr>
-                <td>${inventory.modelId}</td>
-                <td>${inventory.modelName}</td>
-                <td>${inventory.quantity}</td>
-            </tr>
+			
+		    <%-- 在庫台数が１０台未満の場合、行を赤字で表示 --%>
+			<c:if test="${inventory.quantity <10}">
+				<tr style="color: red;">
+					<td>${inventory.modelId}</td>
+					<td>${inventory.modelName}</td>
+					<td>${inventory.quantity}</td>
+				</tr>
+			</c:if>
+			
+			<%-- 在庫台数が１０台以上の場合、通常表示 --%>
+			<c:if test="${inventory.quantity >= 10}">
+				<tr>
+					<td>${inventory.modelId}</td>
+					<td>${inventory.modelName}</td>
+					<td>${inventory.quantity}</td>
+				</tr>
+			</c:if>
+											
         </c:forEach>
         <c:if test="${empty inventoryList}">
             <tr>
