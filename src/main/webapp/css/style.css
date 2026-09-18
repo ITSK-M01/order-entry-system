@@ -91,3 +91,7 @@ select, input[type="submit"] {
     padding: 4px 8px;
     font-size: 14px;
 }
+
+.outofstock {
+	color: #ff0000;
+}
